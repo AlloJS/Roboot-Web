@@ -60,6 +60,10 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+#h1 {
+   
+    position: absolute;
+}
 li {
     list-style: none;
 }
@@ -138,12 +142,10 @@ main {
     grid-column-end: 3;
     height: 20px;
     width: 200px;
-    background-color: white;
     border-radius: 5px;
     border: solid 2px black;
     font-size: larger;
     font-weight: bolder;
-
 }
 .neck {
 
@@ -256,8 +258,21 @@ main {
     border: solid 2px black;
     border-radius: 5px;    
 }
-
 .red {
     background-color: rgb(250, 0, 0);
     z-index: 4;
 }
+.blue {
+
+    background-color: rgb(26, 26, 157);
+
+}
+.box {
+    animation-name: bounce;
+    animation-duration: 4s; /* or: Xms */
+    animation-iteration-count: 10;
+    animation-direction: alternate; /* or: normal */
+    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation-fill-mode: forwards; /* or: backwards, both, none */
+    animation-delay: 2s; /* or: Xms */
+   }
