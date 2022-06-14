@@ -61,8 +61,10 @@ h1 {
     text-align: center;
 }
 #h1 {
-   
+    margin-left: 20px;
     position: absolute;
+    text-align: center;
+    font-size: x-large;
 }
 li {
     list-style: none;
@@ -261,7 +263,10 @@ main {
 }
 .red {
     background-color: rgb(250, 0, 0);
-    z-index: 4;
+    border:none;
+}
+.white {
+    background-color: white;
 }
 .blue {
 
@@ -278,3 +283,19 @@ main {
     animation-fill-mode: forwards; /* or: backwards, both, none */
     animation-delay: 2s; /* or: Xms */
    }
+.head-2 {
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+  
+@keyframes skew {
+    0% {
+      transform: skewX(20deg);
+    }
+    100% {
+      transform: skewX(-20deg);
+    }
+}
+  
+  

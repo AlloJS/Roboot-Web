@@ -1,4 +1,4 @@
-console.log('ROBOOT');
+alert('ROBOOT');
 
 // LIST VAR
 
@@ -58,9 +58,16 @@ mouth.addEventListener('click',function(){
         this.innerHTML = '++++++++++++++++++';
         
     } else if (head.classList.contains('red')){
-        this.classList.add('red');
 
-    } else {
+        this.classList.add('red');
+        this.innerHTML = '';
+
+    } else if (head.classList.contains('red') && this.classList.contains('red') ){
+
+        this.classList.add('blue');
+
+    } 
+    else {
 
         this.classList.add('blue');
         this.classList.remove('red');
@@ -106,13 +113,35 @@ body.addEventListener('click',function(){
     }
 
 
-})
+});
 
 // EVENT ON CLICK OF HANDS
 
 handLeft.addEventListener('click',function(){
 
-h1.innerHTML = "Hi! My name is Roboot";
+h1.innerHTML = "Hi! My name is Roboot! Write your name on the input under of my head and click my other hand and I've other thing for you!";
+
+
+});
+
+handRight.addEventListener('click',function(){
+
+    h1.innerHTML = "Bye, Bye" + " " + input.value;
+    
+    
+});
+
+//EVENT CLICK FOOT
+
+footLeft.addEventListener('click',function(){
+
+        head.classList.remove('head-2');
+        
+     
 
 })
+footRight.addEventListener('click',function(){
 
+        head.classList.add('head-2');
+    
+})
