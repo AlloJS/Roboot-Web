@@ -146,6 +146,7 @@ main {
     border: solid 2px black;
     font-size: larger;
     font-weight: bolder;
+    background-color: white;
 }
 .neck {
 
@@ -265,6 +266,7 @@ main {
 .blue {
 
     background-color: rgb(26, 26, 157);
+    border: none;
 
 }
 .box {

@@ -57,9 +57,13 @@ mouth.addEventListener('click',function(){
         this.classList.remove('blue');
         this.innerHTML = '++++++++++++++++++';
         
+    } else if (head.classList.contains('red')){
+        this.classList.add('red');
+
     } else {
 
         this.classList.add('blue');
+        this.classList.remove('red');
         this.innerHTML = '';
     }
 
@@ -81,8 +85,9 @@ body.addEventListener('click',function(){
         footRight.classList.remove('red');
         armLeft.classList.remove('red');
         armRight.classList.remove('red');
-       
-        
+        mouth.classList.remove('red');
+        mouth.classList.remove('blue');
+            
     } else {
 
         head.classList.add('red');
@@ -96,9 +101,18 @@ body.addEventListener('click',function(){
         footRight.classList.add('red');
         armLeft.classList.add('red');
         armRight.classList.add('red');
+        mouth.classList.add('mouth');
         
     }
 
+
+})
+
+// EVENT ON CLICK OF HANDS
+
+handLeft.addEventListener('click',function(){
+
+h1.innerHTML = "Hi! My name is Roboot";
 
 })
 
