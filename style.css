@@ -288,6 +288,20 @@ main {
     transform: skew(20deg);
     animation-direction: alternate;
 }
+.istruction {
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding: 20PX;
+
+}
+.istruction:hover {
+    color:red;
+}
   
 @keyframes skew {
     0% {
